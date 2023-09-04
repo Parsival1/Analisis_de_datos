@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Iris</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Reconocimiento de flores Iris</h1>
+    <form action="/predict" method="post">
+
+      <label for="SepalLengthCm">Ingrese Longitud (Largo) de cepalo (en cm)</label>
+      <input type="number" name="SepalLengthCm" id="SepalLengthCm" step="0.1" required><br><br>
+
+      <label for="SepalWidthCm">Ingrese la anchura (Ancho) del cepalo (en cm):</label>
+      <input type="number" name="SepalWidthCm" id="SepalWidthCm" step="0.1" required><br><br>
+
+      <label for="PetalLengthCm">Ingrese Longitud (Largo) de petalo (en cm)</label>
+      <input type="number" name="PetalLengthCm" id="PetalLengthCm" step="0.1" required><br><br>
+
+      <label for="PetalWidthCm">Ingrese la anchura (Ancho) del petalo (en cm):</label>
+      <input type="number" name="PetalWidthCm" id="PetalWidthCm" step="0.1" required><br><br>
+
+      <button type="submit">Realizar analisis</button>
+    </form>
+  </div>
+</body>
+</html>

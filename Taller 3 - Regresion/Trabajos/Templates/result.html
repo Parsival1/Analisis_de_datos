@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iris Resultados</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Resultado del analisis</h1>
+    <div class="result">
+      <h2>Resultado:</h2>
+      <p>{{ pred | safe }}</p><br><br>
+    </div>
+    <div id="leyenda">
+      <h2>Leyenda:</h2>
+      <h1><strong>Probabilidad 1</strong> = Iris Setosa</h1>
+      <h1><strong>Probabilidad 2</strong> = Iris virginica</h1>
+      <h1><strong>Probabilidad 3</strong> = Iris versicolor</h1><br><br>
+    </div>
+    <a href="/" class="button" id="otro">Realizar otra prediccion</a>
+  </div>
+</body>
+</html>
