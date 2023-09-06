@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Proyecto de Agricultura</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Reconocimiento de flores Iris</h1>
+    <form action="/predict" method="post">
+
+      <label for="N">Ingrese Nitrogeno</label>
+      <input type="number" name="N" id="N" step="1" required><br><br>
+
+      <label for="P">Ingrese Fosforo:</label>
+      <input type="number" name="P" id="P" step="1" required><br><br>
+
+      <label for="K">Ingrese Potacio</label>
+      <input type="number" name="K" id="K" step="1" required><br><br>
+
+      <label for="temperatura">Ingrese temperatura:</label>
+      <input type="number" name="temperatura" id="temperatura" step="1" required><br><br>
+
+      <label for="humedad">Ingrese humedad:</label>
+      <input type="number" name="humedad" id="humedad" step="1" required><br><br>
+
+      <label for="ph">Ingrese ph:</label>
+      <input type="number" name="ph" id="ph" step="1" required><br><br>
+
+      <label for="precipitacion">Ingrese precipitacion:</label>
+      <input type="number" name="precipitacion" id="precipitacion" step="1" required><br><br>
+
+      <button type="submit">Realizar analisis</button>
+    </form>
+  </div>
+</body>
+</html>
